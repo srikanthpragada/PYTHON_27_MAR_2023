@@ -3,4 +3,8 @@
 price = int(input("Enter price :"))
 discount = price * 10 // 100    # 10%
 net_price = price - discount
-print('Net price :', net_price)
+
+
+print(f"Price      {price:6}")
+print(f"Discount   {discount:6}")
+print(f"Net price  {net_price:6}")
