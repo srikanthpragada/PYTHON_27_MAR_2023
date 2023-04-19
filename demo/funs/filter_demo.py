@@ -8,5 +8,8 @@ def ispositive(n):
 for n in filter(ispositive, nums):
     print(n)
 
+for n in filter(lambda v: v > 0, nums):
+    print(n)
+
 for c in filter(str.isupper, "AbDef"):
     print(c)
