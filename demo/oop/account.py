@@ -1,3 +1,11 @@
+class InvalidAmountError(Exception):
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return f"Invalid Transaction Amount : {self.value}"
+
+
 class Account:
     minbal = 10000
 
@@ -11,6 +19,9 @@ class Account:
         self.balance = balance
 
     def deposit(self, amount):
+        if amount < 1:
+            raise InvalidAmountError(amount)
+
         self.balance += amount
 
     def withdraw(self, amount):
@@ -25,7 +36,7 @@ class Account:
 
 print(Account.getminbal())
 a = Account(1, "Andy")
-a.deposit(50000)
+a.deposit(-50000)
 a.withdraw(10000)
 print(a.getbalance())
 
