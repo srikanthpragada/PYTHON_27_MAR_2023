@@ -27,7 +27,7 @@ RE			 Match			Not a Match
              
 [A-Z]*		 ABC  			abc     Zero or more 
 
-\d+          12             ab
+\d+          12             ab      Digit 
 
 \D+          A-C 			123     Non-digit
 
