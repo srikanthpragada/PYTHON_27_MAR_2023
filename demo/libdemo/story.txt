@@ -1,0 +1,4 @@
+This is a simple story
+This is line 2
+This is another line.
+The end of story.
